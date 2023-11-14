@@ -1,31 +1,85 @@
-/* .share .container .row .sec-col {
-  position: relative;
-} */
-
-/* .share .container .row .sec-col img:nth-child(1) {
-  position: absolute !important;
- 
-  left: 200px;
-}
-
-.share .container .row .sec-col img:nth-child(2) {
-  position: absolute !important;
-  top: 150px !important;
-  left: 50px;
-}
-
-.share .container .row .sec-col img:nth-child(3) {
-  position: absolute !important;
-  top: 150px !important;
-  right: 130px;
-} */
-/* .share .container .row .sec-col img:nth-child(2) {
-  position: absolute !important;
-  top: 300px !important;
-} */
-
 .share .other-images {
   display: flex;
   justify-content: center;
   gap: 70px !important;
+}
+
+.share {
+  position: relative;
+  margin-bottom: 120px !important;
+}
+
+.smiley-image {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 150px
+}
+
+.share .headline {
+  color: #000;
+  font-family: "Port Lligat Sans";
+  font-size: 57.279px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.859px;
+}
+
+.share .text {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  margin-top: 20px
+}
+
+.share .row .first-col {
+  padding-top: 120px
+}
+
+.share .row .sec-col {
+  padding-top: 50px
+}
+
+.share .first-col .wave-svg {
+  margin-left: 190px !important
+}
+
+@media screen and (max-width:991.20px) {
+  .smiley-image {
+    display: none;
+  }
+
+  .share .row .first-col {
+    text-align: center;
+    padding: 20px
+  }
+}
+
+@media screen and (max-width:560px) {
+  .share .headline {
+    font-size: 43px;
+
+  }
+
+  .share .text {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width:440px) {
+  .share .sec-col #share1-img {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width:377.40px) {
+  .share .first-col .wave-svg {
+    margin-left: 0px !important
+  }
 }

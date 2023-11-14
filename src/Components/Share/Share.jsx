@@ -8,14 +8,14 @@ import "./Share.css";
 
 const Share = () => {
   return (
-    <div className="share">
-      <img src={Smiley} alt="smiley" />
+    <div className="share mb-5">
+      <img className="smiley-image" src={Smiley} alt="smiley" />
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 first-col">
             <h2 className="headline">Safe To Share</h2>{" "}
-            <span style={{ marginLeft: "80px" }}>
-              <svg
+            <span className="wave-svg">
+              <svg style={{ marginTop: "-30px" }}
                 xmlns="http://www.w3.org/2000/svg"
                 width="135"
                 height="12"
@@ -38,7 +38,7 @@ const Share = () => {
 
           <div className="col-lg-6 sec-col">
             <div className="text-center">
-              <img src={ShareImage1} alt="share1" />
+              <img id="share1-img" src={ShareImage1} alt="share1" />
             </div>
             <div className="other-images">
               <div>
