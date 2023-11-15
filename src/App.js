@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Hero from "./Components/Hero/Hero";
 import Product from "./Components/Product/Product";
 import Share from "./Components/Share/Share";
+import Ingredient from "./Components/Ingredient/Ingredient";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Product />
       <Share />
+      <Ingredient />
     </div>
   );
 }
