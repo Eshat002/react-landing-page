@@ -9,6 +9,7 @@ import Hero from "./Components/Hero/Hero";
 import Product from "./Components/Product/Product";
 import Share from "./Components/Share/Share";
 import Ingredient from "./Components/Ingredient/Ingredient";
+import BestSeller from "./Components/BestSeller/BestSeller";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Product />
       <Share />
       <Ingredient />
+      <BestSeller />
     </div>
   );
 }
