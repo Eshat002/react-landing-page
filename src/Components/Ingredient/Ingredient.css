@@ -6,8 +6,9 @@
 .ingredient {
     background-color: #F8DF7A;
     position: relative;
-    margin-bottom: 30px;
-    padding: 90px 70px 70px 70px
+    margin-bottom: 0px;
+    padding: 90px 70px 70px 70px;
+    z-index: -1000
 }
 
 .ingredient .white-cookies {

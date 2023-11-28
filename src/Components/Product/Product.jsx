@@ -13,7 +13,7 @@ import "swiper/css/scrollbar";
 
 const Product = () => {
   const handleCustomPrev = () => {
-    document.querySelector(".swiper-button-prev").click();
+    document.querySelector('.swiper-button-prev').click();
   };
 
   const handleCustomNext = () => {

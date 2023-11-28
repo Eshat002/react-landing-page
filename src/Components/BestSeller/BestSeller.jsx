@@ -15,11 +15,11 @@ import BrownCookes from "../../img/brown-cookie.png"
 
 const BestSeller = () => {
   const handleCustomPrev = () => {
-    document.querySelector(".swiper-button-prev").click();
+    document.querySelectorAll(".swiper-button-prev")[1].click();
   };
 
   const handleCustomNext = () => {
-    document.querySelector(".swiper-button-next").click();
+    document.querySelectorAll(".swiper-button-next")[1].click();
   };
 
   const breakpoints = {
@@ -44,11 +44,14 @@ const BestSeller = () => {
       /> */}
       <div className="container-fluid">
         <div className="div-first">
-          <h2 className="headline">Shop Our BestSellers
-            <span><svg xmlns="http://www.w3.org/2000/svg" width="79" height="41" viewBox="0 0 79 41" fill="none">
-              <path d="M76.8333 20.6666L2 20.6666M76.8333 20.6666L58.1666 39.3333M76.8333 20.6666L58.1666 1.99992" stroke="#603913" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <h2 className="headline">Shop Our <span className="bestseller-break">BestSellers
+            <svg className="arrow" xmlns="http://www.w3.org/2000/svg" width="79" height="41" viewBox="0 0 79 41" fill="none">
+              <path d="M76.8333 20.6666L2 20.6666M76.8333 20.6666L58.1666 39.3333M76.8333 20.6666L58.1666 1.99992" stroke="#603913" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
             </svg></span>
           </h2>
+          <svg className="arrow2" xmlns="http://www.w3.org/2000/svg" width="79" height="41" viewBox="0 0 79 41" fill="none">
+            <path d="M76.8333 20.6666L2 20.6666M76.8333 20.6666L58.1666 39.3333M76.8333 20.6666L58.1666 1.99992" stroke="#603913" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </div>
         {/* <div className="div-middle">
           <Swiper
@@ -164,9 +167,9 @@ const BestSeller = () => {
           </Swiper>
         </div> */}
 
-        <div className="div-middle">
+        <div className="div-middle px-3">
           <Swiper
-            spaceBetween={150}
+            spaceBetween={120}
             slidesPerView={3}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
