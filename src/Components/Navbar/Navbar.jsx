@@ -4,6 +4,9 @@ import "./Navbar.css";
 import Logo from "../../img/logo.png";
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-scroll";
+
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -75,23 +78,23 @@ const Navbar = () => {
           <div className="menus">
             <ul>
               <li>
-                <a
+                <Link to='hero' smooth duration={500}
                   onClick={handleMenuItemClick}
                   className="menu active"
                   href=""
                 >
                   Home{" "}
-                </a>{" "}
+                </Link>{" "}
               </li>
               <li>
-                <a onClick={handleMenuItemClick} className="menu" href="">
+                <Link to='product-section' smooth duration={500} onClick={handleMenuItemClick} className="menu" href="">
                   Products{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a onClick={handleMenuItemClick} className="menu" href="">
+                <Link to='footer' smooth duration={500} onClick={handleMenuItemClick} className="menu" href="">
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

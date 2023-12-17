@@ -1,0 +1,116 @@
+.footer {
+    background-color: #603913;
+    margin-top: -20px
+}
+
+.footer .container-fluid {
+    width: 85%;
+    padding: 60px 0px 70px 0px
+}
+
+.footer .footer-title {
+    color: rgba(255, 255, 255, 0.96);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 35px
+}
+
+.footer .footer-link {
+    color: rgba(255, 255, 255, 0.69);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+
+}
+
+.footer p {
+    margin-top: -10px
+}
+
+.footer .des {
+    color: rgba(255, 255, 255, 0.69);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer form input::placeholder {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFFFFFB0;
+
+}
+
+.footer form input {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    color: white
+}
+
+.footer form input:focus {
+    outline: none;
+}
+
+.footer form button {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 7px 19px 7px 19px;
+    border: none;
+    margin-top: 15px
+}
+
+.footer .first-col {
+    padding-right: 70px;
+    /* margin-bottom: 20px */
+}
+
+.footer .social-container {
+    margin-left: -7px
+}
+
+@media screen and (max-width:1152px) {
+    .footer .social-container svg {
+        width: 50px
+    }
+
+    .footer .first-col {
+        padding-right: 40px
+    }
+
+}
+
+
+@media screen and (max-width:991.20px) {
+    .footer .footer-title {
+        margin-bottom: 25px
+    }
+
+    .footer .social-container {
+        margin-top: -5px !important;
+        margin-bottom: 17px
+    }
+
+    .footer .des {
+        margin: -7px 0px 15px 0px
+    }
+}

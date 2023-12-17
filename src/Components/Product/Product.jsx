@@ -10,6 +10,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Bounce from 'react-reveal/Bounce';
+
 
 const Product = () => {
   const handleCustomPrev = () => {
@@ -33,7 +35,9 @@ const Product = () => {
   };
 
   return (
-    <div className="product-section mb-5">
+
+
+    <div id="product-section" className="product-section mb-5">
       {/* <img
         style={{ marginTop: "-300px", height: "150px", width: "100%" }}
         src={E}
@@ -41,7 +45,9 @@ const Product = () => {
       /> */}
       <div className="container-fluid">
         <div className="text-center div-first">
+
           <h2 className="headline">90+ Variety of Cookies</h2>
+
         </div>
         {/* <div className="div-middle">
           <Swiper
@@ -158,41 +164,43 @@ const Product = () => {
         </div> */}
 
         <div className="div-middle">
-          <Swiper
-            spaceBetween={150}
-            slidesPerView={3}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-            navigation={true}
-            modules={[Navigation, Pagination]}
-            breakpoints={breakpoints}
-          >
-            {productData.map((product) => {
-              console.log(product.productImage);
-              return (
-                <SwiperSlide key={product.id}>
-                  <div className="product-card">
-                    <div className="image-container">
-                      <img
-                        style={{ width: "100%" }}
-                        src={product.productImage}
-                        alt="product"
-                      />
-                    </div>
-                    <div className="product-details">
-                      <div className="price">
-                        <p>{product.price}</p>
+          <Bounce left>
+            <Swiper
+              spaceBetween={150}
+              slidesPerView={3}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              navigation={true}
+              modules={[Navigation, Pagination]}
+              breakpoints={breakpoints}
+            >
+              {productData.map((product) => {
+                console.log(product.productImage);
+                return (
+                  <SwiperSlide key={product.id}>
+                    <div className="product-card">
+                      <div className="image-container">
+                        <img
+                          style={{ width: "100%" }}
+                          src={product.productImage}
+                          alt="product"
+                        />
                       </div>
-                      <div className="product-title">
-                        <p>{product.title}</p>
-                        <p>{product.description}</p>
+                      <div className="product-details">
+                        <div className="price">
+                          <p>{product.price}</p>
+                        </div>
+                        <div className="product-title">
+                          <p>{product.title}</p>
+                          <p>{product.description}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </Bounce>
         </div>
 
         <div className="text-center">
@@ -206,6 +214,7 @@ const Product = () => {
         <img src={next} alt="next" />
       </div>
     </div>
+
   );
 };
 
